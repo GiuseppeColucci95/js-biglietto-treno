@@ -38,4 +38,4 @@ if (userAge < 18) {
 }
 
 //Communicate final trip cost to the user
-
+alert(`Il prezzo del suo biglietto è: ${discountedTripCost.toFixed(2)}€`);
