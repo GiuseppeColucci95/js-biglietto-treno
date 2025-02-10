@@ -22,3 +22,20 @@ const youngDiscount = 20;
 const oldDiscount = 40;
 
 //Calculate trip cost and save it in a variable
+const tripCost = chilometers * chilometerCost;
+console.log(`Trip cost not discounted: ${tripCost.toFixed(2)}`);
+
+//Set a variable for discounted trip cost
+let discountedTripCost = tripCost;
+
+//Calculate discount (if necessary)
+if (userAge < 18) {
+  discountedTripCost = discountedTripCost - (discountedTripCost * 20 / 100);
+  console.log(`Under 18, trip cost: ${discountedTripCost.toFixed(2)}`);
+} else if (userAge > 65) {
+  discountedTripCost = discountedTripCost - (discountedTripCost * 40 / 100);
+  console.log(`Over 65, trip cost: ${discountedTripCost.toFixed(2)}`);
+}
+
+//Communicate final trip cost to the user
+
