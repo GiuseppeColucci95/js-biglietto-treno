@@ -16,3 +16,9 @@ console.log(chilometers);
 const userAge = Number(prompt("Quanti anni hai? Inserisci un numero..."));
 console.log(userAge);
 
+//Save costs and discounts in a variable
+const chilometerCost = 0.21;
+const youngDiscount = 20;
+const oldDiscount = 40;
+
+//Calculate trip cost and save it in a variable
